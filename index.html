@@ -7,7 +7,7 @@
     <meta name="keywords" content="">
     <meta name="description" content="">
 
-    <title>LaunchPage - Creative Landing Page Template</title>
+    <title>Shapoorji Pallonji</title>
     
     <!-- Loading Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -26,8 +26,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Font Favicon -->
-    <link rel="shortcut icon" href="images/favicon.ico">
+    <!-- <link rel="shortcut icon" href="images/favicon.ico"> -->
     
 </head>
 
@@ -43,7 +44,8 @@
             <div class="container">
 
                     <!--begin logo -->
-                    <a class="navbar-brand" href="#">LaunchPage</a>
+                    <!-- <a class="navbar-brand" href="#">Shapoorji Pallonji</a> -->
+                    <img class="logo" src="./images/sha_img/logo.png" alt="">
                     <!--end logo -->
 
                     <!--begin navbar-toggler -->
@@ -60,19 +62,16 @@
 
                             <li><a href="#home">Home</a></li>
 
-                            <li><a href="#about">About</a></li>
+                            <li><a href="#Overview">Overview</a></li>
 
-                            <li><a href="#testimonials">Testimonials</a></li>
+                            <li><a href="#Highlights">Highlights</a></li>
 
-                            <li><a href="#portfolio">Work</a></li>
+                            <li><a href="#Amenities ">Amenities</a></li>
 
-                            <li><a href="#team">Team</a></li>
+                            <li><a href="#contact">Location</a></li>
 
-                            <li><a href="#features">Features</a></li>
 
-                            <li><a href="#pricing">Pricing</a></li>
-
-                            <li class="discover-link"><a href="#contact" class="discover-btn">Get Started</a></li>
+                            <li class="discover-link"><a href="#contact" class="discover-btn">Contact</a></li>
 
                         </ul>
                         <!--end navbar-nav -->
@@ -83,6 +82,17 @@
             </div>
     		<!--end container -->
             
+        </nav>
+    	<!--end navbar-fixed-top -->
+        
+    </header>
+    <!--end header -->
+
+
+    <!--begin home section -->
+    <section class="home-section" id="home">
+
+        <div class="home-section-overlay"></div>
 
 		<!--begin container -->
 		<div class="container">
@@ -93,24 +103,24 @@
                 <!--begin col-md-6-->
                 <div class="col-md-6 padding-top-120">
 
-                    <h1>Award-Winning Agency Based In Manchested</h1>
+                    <h1>Building Dreams, Shaping the Future</h1>
 
-                    <p class="hero-text">Excepteur sint occaecat cupidatat nonet proident, vante nisn culpa qui officia deserunt etimus quis autem nets lorem entimus velis netsad.</p>
+                    <p class="hero-text">We combine heritage and innovation to deliver landmark projects that inspire communities, empower progress, and stand as lasting testaments to our commitment to quality and trust.</p>
 
                     <!--begin popup-video-wrapper-->
                     <div class="popup-gallery-wrapper">
                         
                         <!--begin popup-video-->
-                        <div class="popup-gallery hero-gallery">
+                        <!-- <div class="popup-gallery hero-gallery">
                             
                             <a class="popup4 video-icon" href="https://www.youtube.com/watch?v=FPfQMVf4vwQ">
                                 <i class="fas fa-play"></i>
                             </a>
 
-                        </div>
+                        </div> -->
                         <!--end popup-video-->
 
-                        <p class="popup-video-text">Watch Presentation Video</p>
+                        <!-- <p class="popup-video-text">Watch Presentation Video</p> -->
 
                     </div>
                     <!--end popup-video-wrapper-->
@@ -124,9 +134,9 @@
                     <!--begin register-form-wrapper-->
                     <div class="register-form-wrapper wow bounceIn" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: bounceIn;">
 
-                        <h3>Get Your Free 14-Day Trial</h3>
+                        <!-- <h3>Get Your Free 14-Day Trial</h3> -->
 
-                        <p>Velis demo enim quia tempor magnet.</p>
+                        <!-- <p>Velis demo enim quia tempor magnet.</p> -->
 
                         <!--begin form-->
                         <div>
@@ -136,30 +146,22 @@
                             <!--end success message -->
                             
                             <!--begin register form -->
-                            <form id="register-form" class="register-form register" action="php/register.php" method="post">
+                            <form id="register-form" class="register-form register" >
                                 
                     
-                                <input class="register-input name-input white-input" required="" name="register_names" placeholder="Company Name*" type="text">
+                                <input class="register-input white-input" required="" name="name" placeholder="Name" type="text">
                             
-                                <input class="register-input name-email white-input" required="" name="register_email" placeholder="Email Adress*" type="email">
+                                <input class="register-input  white-input" required="" name="email" placeholder="Email" type="email">
 
-                                <select class="register-input white-input" required="" name="register_ticket">
 
-                                    <option value="">We need LaunchPage for...</option>
+                                <input class="register-input  white-input" required="" name="number" placeholder="Number" type="number">
 
-                                    <option value="Individual">Our Support Team</option>
-
-                                    <option value="Professional">Our Sales Department</option>
-
-                                </select>
+                            
                                
-                                <input value="Start My Free 14-Day Trial" class="register-submit" type="submit">
+                                <input value="Contact Us" class="register-submit" type="submit">
                                     
                             </form>
                             <!--end register form -->
-
-                            <p class="register-form-terms">No Credit Card &#8226; No Installation Required</p>
-                            
                         </div>
                         <!--end form-->
 
@@ -178,16 +180,17 @@
     </section>
     <!--end home section -->
 
+
+
+
+
     <!--begin partners-section-->
-    <div class="partners-section">
+    <!-- <div class="partners-section">
         
-        <!--begin container-->
         <div class="container">
 
-            <!--begin row-->
             <div class="row">
             
-                <!--begin col-sm-12-->
                 <div class="col-md-10 mx-auto text-center partners">
                     <h5 class="partners-title">As featured in:</h5>
                     <img src="http://placehold.it/250x128" class="partners" alt="image">
@@ -195,27 +198,21 @@
                     <img src="http://placehold.it/250x128" class="partners" alt="image">
                     <img src="http://placehold.it/250x128" class="partners" alt="image">
                 </div>
-                <!--end col-sm-12-->
                 
             </div>
-            <!--end row-->
             
         </div>
-        <!--end container-->
     
-    </div> 
+    </div>  -->
     <!--end partners-section-->
 
     <!--begin section-grey -->
-    <section class="section-grey" id="about">
+    <!-- <section class="section-grey" id="about">
 
-        <!--begin container -->
         <div class="container">
 
-            <!--begin row -->
             <div class="row">
 
-                <!--begin col-md-12 -->
                 <div class="col-md-12 text-center margin-bottom-10">
 
                     <h2 class="section-title">What We Do</h2>
@@ -223,24 +220,17 @@
                     <p class="section-subtitle">Dicover how our amazing team can help your business.</p>
                     
                 </div>
-                <!--end col-md-12 -->
 
             </div>
-            <!--end row -->
 
         </div>
-        <!--end container -->
 
-        <!--begin services-wrapper -->
         <div class="services-wrapper">
 
-            <!--begin container -->
             <div class="container">
 
-                <!--begin row -->
                 <div class="row">
 
-                    <!--begin col-md-4 -->
                     <div class="col-md-4">
 
                         <div class="main-services blue">
@@ -254,9 +244,7 @@
                         </div>
 
                     </div>
-                    <!--end col-md-4 -->
 
-                    <!--begin col-md-4 -->
                     <div class="col-md-4">
 
                         <div class="main-services red">
@@ -270,9 +258,7 @@
                         </div>
 
                     </div>
-                    <!--end col-md-4 -->
 
-                    <!--begin col-md-4 -->
                     <div class="col-md-4">
 
                         <div class="main-services green">
@@ -286,129 +272,142 @@
                         </div>
 
                     </div>
-                    <!--end col-md-4 -->
                
                 </div>
-                <!--end row -->
                 
             </div>
-            <!--end container -->
 
         </div>
-        <!--end services-wrapper -->
 
-    </section>
+    </section> -->
     <!--end section-grey -->
 
+
+
     <!--begin section-white -->
-    <section class="section-white">
-        
+    <section class="section-white" id="Overview">
+
         <!--begin container-->
         <div class="container">
 
             <!--begin row-->
             <div class="row align-items-center">
-            
+
                 <!--begin col-md-6-->
-                <div class="col-md-6 wow slideInLeft" data-wow-delay="0.25s" style="visibility: visible; animation-delay: 0.25s; animation-name: slideInLeft;">
+                <div class="col-md-6 wow slideInLeft" data-wow-delay="0.25s"
+                    style="visibility: visible; animation-delay: 0.25s; animation-name: slideInLeft;">
 
                     <div class="margin-right-15">
 
-                        <img src="http://placehold.it/555x425" class="width-100 image-shadow bottom-margins-images" alt="pic">
+                        <img src="./images/sha_img/helth.png" class="width-100 image-shadow bottom-margins-images"
+                            alt="pic">
 
                     </div>
-                    
                 </div>
                 <!--end col-sm-6-->
-                
+
                 <!--begin col-md-6-->
                 <div class="col-md-6">
 
-                    <h3>Discover how we can help you to grow your business fast.</h3>
+                    <h3>Bringing relief. Rebuilding hope. Changing lives across the globe.</h3>
 
-                    <p>Velis demo enim ipsam voluptatem quia voluptas sit aspernatur netsum lorem fugit, seditum netis velas matrix net nesciunt.</p>
-                    
+                    <p>Our core mission is clear: to deliver swift relief and foster enduring hope for affected
+                        communities.</p>
+
                     <ul class="benefits">
-                        <li><i class="fas fa-check"></i> Quias netus magni netsum eos qui ratione sequi.</li>
-                        <li><i class="fas fa-check"></i> Venis ratione sequi netus enim quia tempor magni.</li>
-                        <li><i class="fas fa-check"></i> Enim ipsam netus voluptatem quia voluptas.</li>
+                        <li><i class="fas fa-check"></i>Shapoorji pallonji builds resilient communities for a sustainable.</li>
+                        <li><i class="fas fa-check"></i>Creating timeless spaces that shape modern living.</li>
+                        <li><i class="fas fa-check"></i>Designing spaces that define modern living.</li>
                     </ul>
 
-                    <a href="#" class="btn-red small scrool">Discover More</a>
+                    <!-- <a href="#" class="btn-red small scrool">Discover More</a> -->
 
                 </div>
                 <!--end col-md-6-->
-            
+
             </div>
             <!--end row-->
-    
+
         </div>
         <!--end container-->
-    
+
     </section>
     <!--end section-white-->
 
+
+
+
+
+
+
     <!--begin section-grey -->
-    <section class="section-grey">
-        
+    <section class="section-grey" id="Highlights">
+
         <!--begin container-->
         <div class="container">
 
             <!--begin row-->
             <div class="row align-items-center">
-            
+
                 <!--begin col-md-6-->
                 <div class="col-md-6">
 
-                    <div class="nav flex-column nav-pills margin-right-25" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                    <div class="nav flex-column nav-pills margin-right-25" id="v-pills-tab" role="tablist"
+                        aria-orientation="vertical">
 
-                        <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">
-                        
+                        <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home"
+                            role="tab" aria-controls="v-pills-home" aria-selected="true">
+
                             <!--begin features-second -->
                             <div class="features-second">
-                                
+
                                 <div class="dropcaps-circle blue">
-                                    <i class="fas fa-chart-line"></i>
+                                    <!-- <i class="fas fa-chart-line"></i> -->
+                                     <i class="fa-solid fa-solar-panel"></i>
                                 </div>
 
-                                <h4 class="margin-bottom-5">Customize your workflow.</h4>
+                                <h4 class="margin-bottom-5">Living Greens</h4>
 
-                                <p>Manage any process and be ready to address any challenge with total ease.</p>
+                                <p>Expansive Green Lawns: Beautifully landscaped open spaces that bring nature closer to everyday living.</p>
 
                             </div>
                             <!--end features-second-->
                         </a>
 
-                        <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">
-                            
+                        <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile"
+                            role="tab" aria-controls="v-pills-profile" aria-selected="false">
+
                             <!--begin features-second-->
                             <div class="features-second">
 
                                 <div class="dropcaps-circle red">
-                                    <i class="fas fa-network-wired"></i>
+                                    <!-- <i class="fas fa-network-wired"></i> -->
+                                     <i class="fa-solid fa-handshake"></i>
                                 </div>
 
-                                <h4 class="margin-bottom-5">Easy onboarding, fast adoption.</h4>
+                                <!-- <h4 class="margin-bottom-5">Easy onboarding, fast adoption.</h4> -->
 
-                                <p>With Square getting your team on board is as simple as sending an email.</p>
+                                <p>Themed Gardens & Seating Zones: Serene pockets designed for relaxation, reflection, and community gatherings.</p>
 
                             </div>
                             <!--end features-second-->
 
                         </a>
 
-                        <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">
-                            
+                        <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages"
+                            role="tab" aria-controls="v-pills-messages" aria-selected="false">
+
                             <!--begin features-second-->
                             <div class="features-second">
 
                                 <div class="dropcaps-circle green">
-                                    <i class="fas fa-rocket"></i>
+                                    <!-- <i class="fas fa-rocket"></i> -->
+                                     <i class="fa-solid fa-apple-whole"></i>
                                 </div>
 
-                                <h4 class="margin-bottom-5">Improve subscriber retention.</h4>
+                                <!-- <h4 class="margin-bottom-5">Improve subscriber retention.</h4> -->
 
-                                <p>Analyze customers by region, discounts and more and put a plan in place.</p>
+                                <p>Tree-Lined Pathways: Scenic walking trails offering a refreshing connection with nature.</p>
 
                             </div>
                             <!--end features-second-->
@@ -419,23 +418,29 @@
 
                 </div>
                 <!--end col-md-6-->
-                
+
                 <!--begin col-md-6 -->
                 <div class="col-md-6">
 
                     <div class="tab-content margin-left-20" id="v-pills-tabContent">
 
-                        <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
-                            <img src="http://placehold.it/555x425" class="width-100 image-shadow top-margins-images" alt="pic">
+                        <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
+                            aria-labelledby="v-pills-home-tab">
+                            <img src="./images/sha_img/Highlights/Green Landscapes.png" class="width-100 size_inch image-shadow top-margins-images"
+                                alt="pic">
                         </div>
 
-                        <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab"> 
-                            <img src="http://placehold.it/555x425" class="width-100 image-shadow top-margins-images" alt="pic">
+                        <!-- <div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
+                            aria-labelledby="v-pills-profile-tab">
+                            <img src="./images/sha_img/Highlights/Green Landscapes.png" class="width-100 image-shadow top-margins-images"
+                                alt="pic">
                         </div>
 
-                        <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
-                            <img src="http://placehold.it/555x425" class="width-100 image-shadow top-margins-images" alt="pic">
-                        </div>
+                        <div class="tab-pane fade" id="v-pills-messages" role="tabpanel"
+                            aria-labelledby="v-pills-messages-tab">
+                            <img src="./images/sha_img/Highlights/Green Landscapes.png" class="width-100 image-shadow top-margins-images"
+                                alt="pic">
+                        </div> -->
 
                     </div>
 
@@ -444,39 +449,624 @@
 
             </div>
             <!--end row-->
-    
+
         </div>
         <!--end container-->
-    
-    </section>
-    <!--end section-grey-->
 
-    <!--begin section-bg-1 -->
-    <section class="section-bg-1">
-        
-        <div class="section-bg-overlay"></div>
+    </section>
+
+
+    <section class="section-grey">
 
         <!--begin container-->
         <div class="container">
 
             <!--begin row-->
+            <div class="row align-items-center">
+
+
+                  <!--begin col-md-6 -->
+                <div class="col-md-6">
+
+                    <div class="tab-content margin-left-20" id="v-pills-tabContent">
+
+                        <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
+                            aria-labelledby="v-pills-home-tab">
+                            <img src="./images/sha_img/Highlights/Fitness & Wellness Zone.png" class="width-100 size_inch image-shadow top-margins-images"
+                                alt="pic">
+                        </div>
+
+                        <!-- <div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
+                            aria-labelledby="v-pills-profile-tab">
+                            <img src="./images/sha_img/Highlights/Green Landscapes.png" class="width-100 image-shadow top-margins-images"
+                                alt="pic">
+                        </div>
+
+                        <div class="tab-pane fade" id="v-pills-messages" role="tabpanel"
+                            aria-labelledby="v-pills-messages-tab">
+                            <img src="./images/sha_img/Highlights/Green Landscapes.png" class="width-100 image-shadow top-margins-images"
+                                alt="pic">
+                        </div> -->
+
+                    </div>
+
+                </div>
+                <!--end col-md-6 -->
+
+
+                <!--begin col-md-6-->
+                <div class="col-md-6">
+
+                    <div class="nav flex-column nav-pills margin-right-25" id="v-pills-tab" role="tablist"
+                        aria-orientation="vertical">
+
+                        <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home"
+                            role="tab" aria-controls="v-pills-home" aria-selected="true">
+
+                            <!--begin features-second -->
+                            <div class="features-second">
+
+                                <div class="dropcaps-circle blue">
+                                    <!-- <i class="fas fa-chart-line"></i> -->
+                                     <i class="fa-solid fa-dumbbell"></i>
+                                </div>
+
+                                <h4 class="margin-bottom-5">Exclusive Clubhouse</h4>
+
+                                <p>Exclusive Lifestyle Hub: A sophisticated space designed for leisure, recreation, and social engagement.</p>
+
+                            </div>
+                            <!--end features-second-->
+                        </a>
+
+                        <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile"
+                            role="tab" aria-controls="v-pills-profile" aria-selected="false">
+
+                            <!--begin features-second-->
+                            <div class="features-second">
+
+                                <div class="dropcaps-circle red">
+                                    <i class="fas fa-network-wired"></i>
+                                </div>
+
+                                <!-- <h4 class="margin-bottom-5">Easy onboarding, fast adoption.</h4> -->
+
+                                <p>Indoor & Outdoor Amenities: From lounges and game zones to open-air decks — crafted for every mood.</p>
+
+                            </div>
+                            <!--end features-second-->
+
+                        </a>
+
+                        <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages"
+                            role="tab" aria-controls="v-pills-messages" aria-selected="false">
+
+                            <!--begin features-second-->
+                            <div class="features-second">
+
+                                <div class="dropcaps-circle green">
+                                    <i class="fas fa-rocket"></i>
+                                </div>
+
+                                <!-- <h4 class="margin-bottom-5">Improve subscriber retention.</h4> -->
+
+                                <p>Luxurious Interiors: Elegant design and premium finishes that redefine comfort and community living.</p>
+
+                            </div>
+                            <!--end features-second-->
+
+                        </a>
+
+                    </div>
+
+                </div>
+                <!--end col-md-6-->
+
+              
+            </div>
+            <!--end row-->
+
+        </div>
+        <!--end container-->
+
+    </section>
+
+    
+    <section class="section-grey">
+
+        <!--begin container-->
+        <div class="container">
+
+            <!--begin row-->
+            <div class="row align-items-center">
+
+                <!--begin col-md-6-->
+                <div class="col-md-6">
+
+                    <div class="nav flex-column nav-pills margin-right-25" id="v-pills-tab" role="tablist"
+                        aria-orientation="vertical">
+
+                        <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home"
+                            role="tab" aria-controls="v-pills-home" aria-selected="true">
+
+                            <!--begin features-second -->
+                            <div class="features-second">
+
+                                <div class="dropcaps-circle blue">
+                                    <!-- <i class="fas fa-chart-line"></i> -->
+                                     <!-- <i class="fa-solid fa-dumbbell"></i> -->
+                                      <i class="fa-solid fa-x-ray"></i>
+                                </div>
+
+                                <h4 class="margin-bottom-5">Health & Wellness Hub</h4>
+
+                                <p>Fully equipped gym with modern training equipment and personalized workout spaces.</p>
+
+                            </div>
+                            <!--end features-second-->
+                        </a>
+
+                        <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile"
+                            role="tab" aria-controls="v-pills-profile" aria-selected="false">
+
+                            <!--begin features-second-->
+                            <div class="features-second">
+
+                                <div class="dropcaps-circle red">
+                                    <!-- <i class="fas fa-network-wired"></i> -->
+                                     <i class="fa-solid fa-user-doctor"></i>
+                                </div>
+
+                                <!-- <h4 class="margin-bottom-5">Easy onboarding, fast adoption.</h4> -->
+
+                                <p>Peaceful indoor zones for yoga, meditation, and holistic wellness sessions.  </p>
+
+                            </div>
+                            <!--end features-second-->
+
+                        </a>
+
+                        <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages"
+                            role="tab" aria-controls="v-pills-messages" aria-selected="false">
+
+                            <!--begin features-second-->
+                            <div class="features-second">
+
+                                <div class="dropcaps-circle green">
+                                    <!-- <i class="fas fa-rocket"></i> -->
+                                     <i class="fa-solid fa-suitcase-medical"></i>
+                                </div>
+
+                                <!-- <h4 class="margin-bottom-5">Improve subscriber retention.</h4> -->
+
+                                <p>Lush landscaped pathways for morning jogs, evening walks, and mindful relaxation amidst nature.</p>
+
+                            </div>
+                            <!--end features-second-->
+
+                        </a>
+
+                    </div>
+
+                </div>
+                <!--end col-md-6-->
+
+                <!--begin col-md-6 -->
+                <div class="col-md-6">
+
+                    <div class="tab-content margin-left-20" id="v-pills-tabContent">
+
+                        <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
+                            aria-labelledby="v-pills-home-tab">
+                            <img src="./images/sha_img/Highlights/Premium Clubhouse.png" class="width-100 size_inch image-shadow top-margins-images"
+                                alt="pic">
+                        </div>
+
+                        <!-- <div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
+                            aria-labelledby="v-pills-profile-tab">
+                            <img src="./images/sha_img/Highlights/Green Landscapes.png" class="width-100 image-shadow top-margins-images"
+                                alt="pic">
+                        </div>
+
+                        <div class="tab-pane fade" id="v-pills-messages" role="tabpanel"
+                            aria-labelledby="v-pills-messages-tab">
+                            <img src="./images/sha_img/Highlights/Green Landscapes.png" class="width-100 image-shadow top-margins-images"
+                                alt="pic">
+                        </div> -->
+
+                    </div>
+
+                </div>
+                <!--end col-md-6 -->
+
+            </div>
+            <!--end row-->
+
+        </div>
+        <!--end container-->
+
+    </section>
+
+
+      <section class="section-grey">
+
+        <!--begin container-->
+        <div class="container">
+
+            <!--begin row-->
+            <div class="row align-items-center">
+
+
+                  <!--begin col-md-6 -->
+                <div class="col-md-6">
+
+                    <div class="tab-content margin-left-20" id="v-pills-tabContent">
+
+                        <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
+                            aria-labelledby="v-pills-home-tab">
+                            <img src="./images/sha_img/Highlights/Kids’ Play Area.png" class="width-100 size_inch image-shadow top-margins-images"
+                                alt="pic">
+                        </div>
+
+                        <!-- <div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
+                            aria-labelledby="v-pills-profile-tab">
+                            <img src="./images/sha_img/Highlights/Green Landscapes.png" class="width-100 image-shadow top-margins-images"
+                                alt="pic">
+                        </div>
+
+                        <div class="tab-pane fade" id="v-pills-messages" role="tabpanel"
+                            aria-labelledby="v-pills-messages-tab">
+                            <img src="./images/sha_img/Highlights/Green Landscapes.png" class="width-100 image-shadow top-margins-images"
+                                alt="pic">
+                        </div> -->
+
+                    </div>
+
+                </div>
+                <!--end col-md-6 -->
+
+
+                <!--begin col-md-6-->
+                <div class="col-md-6">
+
+                    <div class="nav flex-column nav-pills margin-right-25" id="v-pills-tab" role="tablist"
+                        aria-orientation="vertical">
+
+                        <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home"
+                            role="tab" aria-controls="v-pills-home" aria-selected="true">
+
+                            <!--begin features-second -->
+                            <div class="features-second">
+
+                                <div class="dropcaps-circle blue">
+                                    <!-- <i class="fas fa-chart-line"></i> -->
+                                     <!-- <i class="fa-solid fa-weight-scale"></i> -->
+                                      <i class="fa-solid fa-gamepad"></i>
+                                </div>
+
+                                <h4 class="margin-bottom-5">Safe & Engaging Play Zones:</h4>
+
+                                <p>Thoughtfully designed outdoor and indoor spaces for fun, learning, and creativity.</p>
+
+                            </div>
+                            <!--end features-second-->
+                        </a>
+
+                        <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile"
+                            role="tab" aria-controls="v-pills-profile" aria-selected="false">
+
+                            <!--begin features-second-->
+                            <div class="features-second">
+
+                                <div class="dropcaps-circle red">
+                                    <!-- <i class="fa-solid fa-notes-medical"></i> -->
+                                     <i class="fa-solid fa-puzzle-piece"></i>
+                                </div>
+
+                                <!-- <h4 class="margin-bottom-5">Easy onboarding, fast adoption.</h4> -->
+
+                                <p>Age-appropriate installations ensuring active, joyful, and secure playtime.</p>
+
+                            </div>
+                            <!--end features-second-->
+
+                        </a>
+
+                        <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages"
+                            role="tab" aria-controls="v-pills-messages" aria-selected="false">
+
+                            <!--begin features-second-->
+                            <div class="features-second">
+
+                                <div class="dropcaps-circle green">
+                                    <!-- <i class="fa-solid fa-user-nurse"></i> -->
+                                     <i class="fa-solid fa-trophy"></i>
+                                </div>
+
+                                <!-- <h4 class="margin-bottom-5">Improve subscriber retention.</h4> -->
+
+                                <p>Soft-surface areas crafted for the youngest residents to explore safely.</p>
+
+                            </div>
+                            <!--end features-second-->
+
+                        </a>
+
+                    </div>
+
+                </div>
+                <!--end col-md-6-->
+
+              
+            </div>
+            <!--end row-->
+
+        </div>
+        <!--end container-->
+
+    </section>
+
+
+     <section class="section-grey">
+
+        <!--begin container-->
+        <div class="container">
+
+            <!--begin row-->
+            <div class="row align-items-center">
+
+                <!--begin col-md-6-->
+                <div class="col-md-6">
+
+                    <div class="nav flex-column nav-pills margin-right-25" id="v-pills-tab" role="tablist"
+                        aria-orientation="vertical">
+
+                        <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home"
+                            role="tab" aria-controls="v-pills-home" aria-selected="true">
+
+                            <!--begin features-second -->
+                            <div class="features-second">
+
+                                <div class="dropcaps-circle blue">
+                                    <!-- <i class="fas fa-chart-line"></i> -->
+                                     <i class="fa-solid fa-lock"></i>
+                                </div>
+
+                                <h4 class="margin-bottom-5">24/7 Security</h4>
+
+                                <p>Round-the-Clock Surveillance: Advanced CCTV monitoring ensuring complete safety across the premises.</p>
+
+                            </div>
+                            <!--end features-second-->
+                        </a>
+
+                        <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile"
+                            role="tab" aria-controls="v-pills-profile" aria-selected="false">
+
+                            <!--begin features-second-->
+                            <div class="features-second">
+
+                                <div class="dropcaps-circle red">
+                                    <i class="fa-solid fa-shield-halved"></i>
+                                </div>
+
+                                <!-- <h4 class="margin-bottom-5">Easy onboarding, fast adoption.</h4> -->
+
+                                <p>Trained Security Personnel: Professional guards providing vigilant protection at all entry and exit points.</p>
+
+                            </div>
+                            <!--end features-second-->
+
+                        </a>
+
+                        <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages"
+                            role="tab" aria-controls="v-pills-messages" aria-selected="false">
+
+                            <!--begin features-second-->
+                            <div class="features-second">
+
+                                <div class="dropcaps-circle green">
+                                    <!-- <i class="fas fa-rocket"></i> -->
+                                     <i class="fa-solid fa-lock-open"></i>
+                                </div>
+
+                                <!-- <h4 class="margin-bottom-5">Improve subscriber retention.</h4> -->
+
+                                <p>Smart Access Control: Secure entry systems and visitor management for enhanced peace of mind.</p>
+
+                            </div>
+                            <!--end features-second-->
+
+                        </a>
+
+                    </div>
+
+                </div>
+                <!--end col-md-6-->
+
+                <!--begin col-md-6 -->
+                <div class="col-md-6">
+
+                    <div class="tab-content margin-left-20" id="v-pills-tabContent">
+
+                        <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
+                            aria-labelledby="v-pills-home-tab">
+                            <img src="./images/sha_img/Highlights/Security.png" class="width-100 size_inch image-shadow top-margins-images"
+                                alt="pic">
+                        </div>
+
+                        <!-- <div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
+                            aria-labelledby="v-pills-profile-tab">
+                            <img src="./images/sha_img/Highlights/Green Landscapes.png" class="width-100 image-shadow top-margins-images"
+                                alt="pic">
+                        </div>
+
+                        <div class="tab-pane fade" id="v-pills-messages" role="tabpanel"
+                            aria-labelledby="v-pills-messages-tab">
+                            <img src="./images/sha_img/Highlights/Green Landscapes.png" class="width-100 image-shadow top-margins-images"
+                                alt="pic">
+                        </div> -->
+
+                    </div>
+
+                </div>
+                <!--end col-md-6 -->
+
+            </div>
+            <!--end row-->
+
+        </div>
+        <!--end container-->
+
+    </section>
+
+
+      <section class="section-grey">
+
+        <!--begin container-->
+        <div class="container">
+
+            <!--begin row-->
+            <div class="row align-items-center">
+
+
+                  <!--begin col-md-6 -->
+                <div class="col-md-6">
+
+                    <div class="tab-content margin-left-20" id="v-pills-tabContent">
+
+                        <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
+                            aria-labelledby="v-pills-home-tab">
+                            <img src="./images/sha_img/Highlights/Sustainable Living.png" class="width-100 size_inch size_inch image-shadow top-margins-images"
+                                alt="pic">
+                        </div>
+
+                        <!-- <div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
+                            aria-labelledby="v-pills-profile-tab">
+                            <img src="./images/sha_img/Highlights/Green Landscapes.png" class="width-100 image-shadow top-margins-images"
+                                alt="pic">
+                        </div>
+
+                        <div class="tab-pane fade" id="v-pills-messages" role="tabpanel"
+                            aria-labelledby="v-pills-messages-tab">
+                            <img src="./images/sha_img/Highlights/Green Landscapes.png" class="width-100 image-shadow top-margins-images"
+                                alt="pic">
+                        </div> -->
+
+                    </div>
+
+                </div>
+                <!--end col-md-6 -->
+
+
+                <!--begin col-md-6-->
+                <div class="col-md-6">
+
+                    <div class="nav flex-column nav-pills margin-right-25" id="v-pills-tab" role="tablist"
+                        aria-orientation="vertical">
+
+                        <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home"
+                            role="tab" aria-controls="v-pills-home" aria-selected="true">
+
+                            <!--begin features-second -->
+                            <div class="features-second">
+
+                                <div class="dropcaps-circle blue">
+                                    <!-- <i class="fas fa-chart-line"></i> -->
+                                     <i class="fa-brands fa-resolving"></i>
+                                </div>
+
+                                <h4 class="margin-bottom-5">Sustainable Living</h4>
+
+                                <p>Eco-Friendly Design: Energy-efficient architecture that minimizes environmental impact and promotes green living.</p>
+
+                            </div>
+                            <!--end features-second-->
+                        </a>
+
+                        <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile"
+                            role="tab" aria-controls="v-pills-profile" aria-selected="false">
+
+                            <!--begin features-second-->
+                            <div class="features-second">
+
+                                <div class="dropcaps-circle red">
+                                    <!-- <i class="fas fa-network-wired"></i> -->
+                                     <i class="fa-solid fa-gift"></i>
+                                </div>
+
+                                <!-- <h4 class="margin-bottom-5">Easy onboarding, fast adoption.</h4> -->
+
+                                <p>Rainwater Harvesting & Waste Management: Smart systems that conserve resources and support a cleaner community.</p>
+
+                            </div>
+                            <!--end features-second-->
+
+                        </a>
+
+                        <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages"
+                            role="tab" aria-controls="v-pills-messages" aria-selected="false">
+
+                            <!--begin features-second-->
+                            <div class="features-second">
+
+                                <div class="dropcaps-circle green">
+                                    <!-- <i class="fas fa-rocket"></i> -->
+                                     <i class="fa-solid fa-gifts"></i>
+                                </div>
+
+                                <!-- <h4 class="margin-bottom-5">Improve subscriber retention.</h4> -->
+
+                                <p>Lush Green Landscaping: Thoughtfully planned green zones enhancing air quality and promoting a healthier lifestyle.</p>
+
+                            </div>
+                            <!--end features-second-->
+
+                        </a>
+
+                    </div>
+
+                </div>
+                <!--end col-md-6-->
+
+              
+            </div>
+            <!--end row-->
+
+        </div>
+        <!--end container-->
+
+    </section>
+    <!--end section-grey-->
+
+
+
+   
+    <!--end section-white-->
+
+    <!--begin section-grey -->
+    
+    <!--end section-grey-->
+
+    <!--begin section-bg-1 -->
+    <!-- <section class="section-bg-1">
+        
+        <div class="section-bg-overlay"></div>
+
+        <div class="container">
+
             <div class="row">
             
-                <!--begin col md 7 -->
                 <div class="col-md-7 mx-auto margin-bottom-20 text-center">
 
                     <h2 class="white-text">Fun Facts About Our Agency</h2>
 
                 </div>
-                <!--end col md 7-->
             
             </div>
-            <!--end row-->
     
-            <!--begin row-->
             <div class="row">
         
-                <!--begin fun-facts-box -->
                 <div class="col-md-2 offset-md-2 fun-facts-box text-center">
                     
                     <i class="far fa-gem"></i>
@@ -484,9 +1074,7 @@
                     <p class="fun-facts-title"><span class="facts-numbers">1050+</span><br>Projects Completed</p>
                     
                 </div>
-                <!--end fun-facts-box -->
 
-                <!--begin fun-facts-box -->
                 <div class="col-md-2 fun-facts-box text-center">
                     
                     <i class="far fa-heart"></i>
@@ -494,9 +1082,7 @@
                     <p class="fun-facts-title"><span class="facts-numbers">217k</span><br>Happy Clients</p>
                         
                 </div>
-                <!--end fun-facts-box -->
 
-                <!--begin fun-facts-box -->
                 <div class="col-md-2 fun-facts-box text-center">
                     
                     <i class="fas fa-award"></i>
@@ -504,9 +1090,7 @@
                     <p class="fun-facts-title"><span class="facts-numbers">1210</span><br>Design Awards</p>
                         
                 </div>
-                <!--end fun-facts-box -->
 
-                <!--begin fun-facts-box -->
                 <div class="col-md-2 fun-facts-box text-center">
                     
                     <i class="fas fa-anchor"></i>
@@ -514,40 +1098,35 @@
                     <p class="fun-facts-title"><span class="facts-numbers">2137</span><br>Line Of Codes</p>
                         
                 </div>
-                <!--end fun-facts-box -->
 
             </div>
-            <!--end row-->
     
         </div>
-        <!--end container-->
     
-    </section>
+    </section> -->
     <!--end section-bg-1 -->
 
-    <!--begin testimonials section -->
-    <section class="section-grey" id="testimonials">
 
-        <!--begin container -->
+
+
+
+    <!--begin testimonials section -->
+    <!-- <section class="section-grey" id="testimonials">
+
         <div class="container">
 
-            <!--begin row -->
             <div class="row align-items-center">
 
-                <!--begin col-md-5 -->
                 <div class="col-md-5 col-sm-12">
 
                     <h2>What People Are Saying.</h2>
 
                     <p>Quis autem velis ets reprehender net etid quiste nets voluptate. Utise wisi enim minim veniam, quis etsad aspernatis netsum stationes nets.</p>
                     
-                        <!--begin row-->
                         <div class="row">
                         
-                            <!--begin col-md-4-->
                             <div class="col-md-4 col-sm-6">
 
-                                <!--begin testim-platform-->
                                 <div class="testim-platform first">
 
                                     <p>TrustPilot</p>
@@ -561,15 +1140,11 @@
                                     </div>
 
                                 </div>
-                                <!--end testim-platform-->
                                 
                             </div>
-                            <!--end col-sm-4-->
                             
-                            <!--begin col-md-4-->
                             <div class="col-md-4 col-sm-6">
 
-                                <!--begin testim-platform-->
                                 <div class="testim-platform">
 
                                     <p>Feefo</p>
@@ -583,28 +1158,19 @@
                                     </div>
 
                                 </div>
-                                <!--end testim-platform-->
                                 
                             </div>
-                            <!--end col-sm-4-->
                             
                         </div>
-                        <!--end row-->
                         
                 </div>
-                <!--end col-md-5 -->
 
-                <!--begin col-md-1 -->
                 <div class="col-md-1"></div>
-                <!--end col-md-1 -->
 
-                <!--begin col-md-6-->
                 <div class="col-md-6">
 
-                    <!--begin accordion -->
                     <div class="accordion" id="accordionFAQ">
 
-                        <!--begin card -->
                         <div class="card">
                             
                             <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionFAQ">
@@ -623,9 +1189,7 @@
                             </div>
 
                         </div>
-                        <!--end card -->
 
-                        <!--begin card -->
                         <div class="card">
 
                             <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionFAQ">
@@ -644,9 +1208,7 @@
                             </div>
 
                         </div>
-                        <!--end card -->
 
-                        <!--begin card -->
                         <div class="card">
 
                             <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionFAQ">
@@ -665,33 +1227,25 @@
                             </div>
 
                         </div>
-                        <!--end card -->
 
                     </div>
-                    <!--end accordion -->
 
                 </div>
-                <!--end col-md-6-->
 
             </div>
-            <!--end row -->
 
         </div>
-        <!--end container -->
 
-    </section>
+    </section> -->
     <!--end testimonials section -->
 
     <!--begin section-white -->
-    <section class="section-white" id="portfolio">
+    <!-- <section class="section-white" id="portfolio">
 
-        <!--begin container -->
         <div class="container">
 
-            <!--begin row -->
             <div class="row">
 
-                <!--begin col-md-12 -->
                 <div class="col-md-12 text-center margin-bottom-30">
 
                     <h2 class="section-title">Our Portfolio</h2>
@@ -699,104 +1253,81 @@
                     <p class="section-subtitle">Dicover the latest projects accomplished for my clients.</p>
                     
                 </div>
-                <!--end col-md-12 -->
 
             </div>
-            <!--end row -->
 
         </div>
-        <!--end container -->
 
-        <!--begin container -->
         <div class="container">
 
-            <!--begin row-->
             <div class="row wow fadeIn" data-wow-delay="0.25s" style="visibility: visible; animation-delay: 0.25s; animation-name: fadeIn;">
 
-                <!--begin col-md-4 -->
                 <div class="col-md-4 col-sm-12 p-0 m-0">
 
                     <figure class="gallery-insta">
-                        <!--begin popup-gallery-->
                         <div class="popup-gallery popup-gallery-rounded portfolio-pic">
                             <a class="popup2" href="http://placehold.it/555x460">
                                 <img src="http://placehold.it/555x460" class="width-100" alt="pic">
                                 <span class="eye-wrapper"><i class="fa fa-search-plus eye-icon" style="font-size: 38px;"></i></span>
                             </a>
                         </div>
-                        <!--end popup-gallery-->
                     </figure>
 
                     <figure class="gallery-insta">
-                        <!--begin popup-gallery-->
                         <div class="popup-gallery popup-gallery-rounded portfolio-pic">
                             <a class="popup2" href="http://placehold.it/555x460">
                                 <img src="http://placehold.it/555x460" class="width-100" alt="pic">
                                 <span class="eye-wrapper"><i class="fa fa-search-plus eye-icon" style="font-size: 38px;"></i></span>
                             </a>
                         </div>
-                        <!--end popup-gallery-->
                     </figure>
 
                 </div>
-                <!--end col-md-4 -->
 
-                <!--begin col-md-4 -->
                 <div class="col-md-4 col-sm-6 col-xs-12 p-0 m-0">
 
                     <figure class="gallery-insta">
-                        <!--begin popup-gallery-->
                         <div class="popup-gallery popup-gallery-rounded portfolio-pic">
                             <a class="popup2" href="http://placehold.it/623x1050">
                                 <img src="http://placehold.it/623x1050" class="width-100" alt="pic">
                                 <span class="eye-wrapper"><i class="fa fa-search-plus eye-icon" style="font-size: 38px;"></i></span>
                             </a>
                         </div>
-                        <!--end popup-gallery-->
                     </figure>
 
                 </div>
-                <!--end col-md-4 -->
 
-                <!--begin col-md-4 -->
                 <div class="col-md-4 col-sm-6 col-xs-12 p-0 m-0">
 
                     <figure class="gallery-insta">
-                        <!--begin popup-gallery-->
                         <div class="popup-gallery popup-gallery-rounded portfolio-pic">
                             <a class="popup2" href="http://placehold.it/555x460">
                                 <img src="http://placehold.it/555x460" class="width-100" alt="pic">
                                 <span class="eye-wrapper"><i class="fa fa-search-plus eye-icon" style="font-size: 38px;"></i></span>
                             </a>
                         </div>
-                        <!--end popup-gallery-->
                     </figure>
 
                     <figure class="gallery-insta">
-                        <!--begin popup-gallery-->
                         <div class="popup-gallery popup-gallery-rounded portfolio-pic">
                             <a class="popup2" href="http://placehold.it/555x460">
                                 <img src="http://placehold.it/555x460" class="width-100" alt="pic">
                                 <span class="eye-wrapper"><i class="fa fa-search-plus eye-icon" style="font-size: 38px;"></i></span>
                             </a>
                         </div>
-                        <!--end popup-gallery-->
                     </figure>
                     
                 </div>
-                <!--end col-md-4 -->
 
             </div>
-            <!--end row -->
 
         </div>
-        <!--end container -->
 
-    </section>
+    </section> -->
     <!--end section-white -->
 
     <!--begin team section -->
-    <section class="section-grey" id="team">
+    <section class="section-grey" id="Amenities">
 
         <!--begin container-->
         <div class="container">
@@ -807,9 +1338,9 @@
                 <!--begin col-md-12 -->
                 <div class="col-md-12 text-center">
 
-                    <h2 class="section-title">Meet Our Team</h2>
+                    <h2 class="section-title">Amenities</h2>
 
-                    <p class="section-subtitle">Discover more about our high performing team.</p>
+                    <p class="section-subtitle">Modern Gym, Pool, Gardens, Smart Spaces</p>
                     
                 </div>
                 <!--end col-md-12 -->
@@ -817,15 +1348,15 @@
                 <!--begin team-item -->
                 <div class="col-sm-12 col-md-4 margin-top-30">
 
-                    <img src="http://placehold.it/555x555" class="team-img width-100" alt="pic">
+                    <img src="./images/sha_img/Amenities/Amenities-one.png" class="team-img width-100" alt="pic">
                    
                     <div class="team-item">
                     
-                        <h3>CHRISTINA HAWKINS</h3>
+                        <h3>Club House</h3>
                         
-                        <div class="team-info"><p>Head of SEO</p></div>
+                        <!-- <div class="team-info"><p>Head of SEO</p></div> -->
 
-                        <p>Johnathan is our  co-founder and has developed search strategies for a variety of clients for over 5 years.</p>
+                        <!-- <p>Johnathan is our  co-founder and has developed search strategies for a variety of clients for over 5 years.</p> -->
                     
                     </div>
 
@@ -835,15 +1366,15 @@
                 <!--begin team-item -->
                 <div class="col-sm-12 col-md-4 margin-top-30">
 
-                    <img src="http://placehold.it/555x555" class="team-img width-100" alt="pic">
+                    <img src="/images/sha_img/Amenities/Amenities-two.png" class="team-img width-100" alt="pic">
                    
                     <div class="team-item">
                     
-                        <h3>ANDRES JOHANSON</h3>
+                        <h3>Premium Gym</h3>
                         
-                        <div class="team-info geen"><p>Marketing Manager</p></div>
+                        <!-- <div class="team-info geen"><p>Marketi</p></div> -->
 
-                        <p>Andres fell in love with marketing at the school and looks forward to being part of the industry for years.</p>
+                        <!-- <p>Andres fell in love with marketing at the school and looks forward to being part of the industry for years.</p> -->
                     
                     </div>
 
@@ -853,15 +1384,60 @@
                 <!--begin team-item -->
                 <div class="col-sm-12 col-md-4 margin-top-30">
 
-                    <img src="http://placehold.it/555x555" class="team-img width-100" alt="pic">
+                    <img src="/images/sha_img/Amenities/jogging.png" class="team-img width-100" alt="pic">
                    
                     <div class="team-item">
                     
-                        <h3>ALEXANDRA SMITHS</h3>
+                        <h3>Jogging</h3>
                         
-                        <div class="team-info green"><p>SEO Specialist</p></div>
+                        <!-- <div class="team-info green"><p>SEO Specialist</p></div> -->
 
-                        <p>Graduating with a degree in Spanish, English and French, she has always loved writing.</p>
+                        <!-- <p>Graduating with a degree in Spanish, English and French, she has always loved writing.</p> -->
+                    
+                    </div>
+
+                </div>
+                <div class="col-sm-12 col-md-4 margin-top-30">
+
+                    <img src="/images/sha_img/Amenities/mini-theatre.png" class="team-img width-100" alt="pic">
+                   
+                    <div class="team-item">
+                    
+                        <h3> Mini Theatre</h3>
+                        
+                        <!-- <div class="team-info green"><p>SEO Specialist</p></div> -->
+
+                        <!-- <p>Graduating with a degree in Spanish, English and French, she has always loved writing.</p> -->
+                    
+                    </div>
+
+                </div>
+                <div class="col-sm-12 col-md-4 margin-top-30">
+
+                    <img src="/images/sha_img/Amenities/swimming-pool.png" class="team-img width-100" alt="pic">
+                   
+                    <div class="team-item">
+                    
+                        <h3>Swimming Pool</h3>
+                        
+                        <!-- <div class="team-info green"><p>SEO Specialist</p></div> -->
+
+                        <!-- <p>Graduating with a degree in Spanish, English and French, she has always loved writing.</p> -->
+                    
+                    </div>
+
+                </div>
+                <div class="col-sm-12 col-md-4 margin-top-30">
+
+                    <img src="/images/sha_img/Amenities/jogging.png" class="team-img width-100" alt="pic">
+                   
+                    <div class="team-item">
+                    
+                        <h3>Jogging</h3>
+                        
+                        <!-- <div class="team-info green"><p>SEO Specialist</p></div> -->
+
+                        <!-- <p>Graduating with a degree in Spanish, English and French, she has always loved writing.</p> -->
                     
                     </div>
 
@@ -877,18 +1453,16 @@
     </section>
     <!--end team section-->
 
+
+
     <!--begin section-bg-2 -->
-    <section class="section-bg-2">
-        
+    <!-- <section class="section-bg-2">
         <div class="section-bg-overlay"></div>
 
-        <!--begin container-->
         <div class="container">
 
-            <!--begin row-->
             <div class="row">
             
-                <!--begin col md 7 -->
                 <div class="col-md-7 mx-auto text-center">
 
                     <h2 class="white-text">Award-Winning Agency</h2>
@@ -900,27 +1474,21 @@
                     <a href="#" class="btn-white-border small scrool">Get In Touch</a>
 
                 </div>
-                <!--end col md 7-->
             
             </div>
-            <!--end row-->
     
         </div>
-        <!--end container-->
     
-    </section>
+    </section> -->
     <!--end section-bg-2 -->
 
     <!--begin features section -->
-    <section class="section-white" id="features">
+    <!-- <section class="section-white" id="features">
 
-        <!--begin container -->
         <div class="container">
 
-            <!--begin row -->
             <div class="row">
 
-                <!--begin col-md-12-->
                 <div class="col-md-12 text-center padding-bottom-10">
 
                     <h2 class="section-title">Amazing Features</h2>
@@ -928,15 +1496,11 @@
                     <p class="section-subtitle">Quis autem velis ets reprehender net etid quiste voluptate.</p>
 
                 </div>
-                <!--end col-md-12 -->
 
             </div>
-            <!--end row -->
 
-            <!--begin row -->
             <div class="row">
 
-                <!--begin col-md-4-->
                 <div class="col-md-4">
 
                     <div class="feature-box light-green wow fadeIn" data-wow-delay="0.25s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeIn;">
@@ -954,9 +1518,7 @@
                     </div>
 
                 </div>
-                <!--end col-md-4 -->
 
-                <!--begin col-md-4-->
                 <div class="col-md-4">
 
                     <div class="feature-box light-blue wow fadeIn" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeIn;">
@@ -974,9 +1536,7 @@
                     </div>
 
                 </div>
-                <!--end col-md-4 -->
 
-                <!--begin col-md 4-->
                 <div class="col-md-4">
 
                     <div class="feature-box orange wow fadeIn" data-wow-delay="0.75s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeIn;">
@@ -995,15 +1555,11 @@
                     </div>
 
                 </div>
-                <!--end col-md-4 -->
 
             </div>
-            <!--end row -->
 
-            <!--begin row -->
             <div class="row">
 
-                <!--begin col-md-4-->
                 <div class="col-md-4">
 
                     <div class="feature-box dark-blue wow fadeIn" data-wow-delay="1s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeIn;">
@@ -1021,9 +1577,7 @@
                     </div>
 
                 </div>
-                <!--end col-md-4 -->
 
-                <!--begin col-md-4-->
                 <div class="col-md-4">
 
                     <div class="feature-box light-red wow fadeIn" data-wow-delay="1.25s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeIn;">
@@ -1041,9 +1595,7 @@
                     </div>
 
                 </div>
-                <!--end col-md-4 -->
 
-                <!--begin col-md-4-->
                 <div class="col-md-4">
 
                     <div class="feature-box dark-green wow fadeIn" data-wow-delay="1.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeIn;">
@@ -1063,27 +1615,21 @@
                     </div>
 
                 </div>
-                <!--end col-md-4 -->
 
             </div>
-            <!--end row -->
 
         </div>
-        <!--end container -->
 
-    </section>
+    </section> -->
     <!--end features section -->
 
     <!--begin pricing section -->
-    <section class="section-grey" id="pricing">
+    <!-- <section class="section-grey" id="pricing">
 
-        <!--begin container -->
         <div class="container">
 
-            <!--begin row -->
             <div class="row align-items-center">
 
-                <!--begin col-md-4 -->
                 <div class="col-md-4 col-sm-12">
 
                     <h3>Great pricing plans tailored to your needs.</h3>
@@ -1091,9 +1637,7 @@
                     <p>Quis autem velis ets reprehender net etid quiste voluptate. Utise wisi enim minim veniam, quis et stationes nets.</p>
                     
                 </div>
-                <!--end col-md-4 -->
 
-                <!--begin col-md-4-->
                 <div class="col-md-4 col-sm-6 wow bounceIn" data-wow-delay="0.25s" style="visibility: visible; animation-delay: 0.25s; animation-name: bounceIn;">
 
                     <div class="price-box-white">
@@ -1117,9 +1661,7 @@
                     </div>
 
                 </div>
-                <!--end col-md-4 -->
 
-                <!--begin col-md-4 -->
                 <div class="col-md-4 col-sm-6 wow bounceIn" data-wow-delay="0.75s" style="visibility: visible; animation-delay: 0.75s; animation-name: bounceIn;">
 
                     <div class="price-box-grey">
@@ -1145,27 +1687,21 @@
                     </div>
 
                 </div>
-                <!--end col-md-4 -->
 
             </div>
-            <!--end row -->
 
         </div>
-        <!--end container -->
 
-    </section>
+    </section> -->
     <!--end pricing section -->
 
     <!--begin faq section -->
-    <section class="section-white" id="faq">
+    <!-- <section class="section-white" id="faq">
 
-        <!--begin container -->
         <div class="container">
 
-            <!--begin row -->
             <div class="row">
 
-                <!--begin col-md-12-->
                 <div class="col-md-12 text-center padding-bottom-10">
 
                     <h2 class="section-title">Frequently Asked Questions</h2>
@@ -1173,15 +1709,11 @@
                     <p class="section-subtitle">Quis autem velis ets reprehender net etid quiste voluptate.</p>
 
                 </div>
-                <!--end col-md-12 -->
 
             </div>
-            <!--end row -->
 
-            <!--begin row -->
             <div class="row">
 
-                <!--begin col-md-6-->
                 <div class="col-md-6">
 
                     <div class="faq-box">
@@ -1201,9 +1733,7 @@
                     </div>
                     
                 </div>
-                <!--end col-md-6 -->
 
-                <!--begin col-md-6-->
                 <div class="col-md-6">
 
                     <div class="faq-box">
@@ -1224,29 +1754,26 @@
 
                 </div>
 
-                <!--end col-md-6 -->
 
             </div>
-            <!--end row -->
 
         </div>
-        <!--end container -->
 
-    </section>
+    </section> -->
     <!--end faq section -->
 
+
+
+
     <!--begin section-bg-2 -->
-    <section class="section-bg-2" id="contact">
+    <!-- <section class="section-bg-2" id="contact">
         
         <div class="section-bg-overlay"></div>
 
-        <!--begin container-->
         <div class="container">
 
-            <!--begin row -->
             <div class="row">
 
-                <!--begin col-md-12-->
                 <div class="col-md-12 text-center padding-bottom-10">
 
                     <h2 class="section-title white-text">Contact Us</h2>
@@ -1254,59 +1781,36 @@
                     <p class="section-subtitle white">Have any queries? Get in touch today.</p>
 
                 </div>
-                <!--end col-md-12 -->
 
             </div>
-            <!--end row -->
 
-            <!--begin row-->
             <div class="row justify-content-md-center">
             
-                <!--begin col-md-8-->
                 <div class="col-md-8 text-center margin-top-10">
 
-                    <!--begin contact-form-wrapper-->
                     <div class="contact-form-wrapper wow bounceIn" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: bounceIn;">
 
-                        <!--begin form-->
                         <div>
                              
-                            <!--begin success message -->
                             <p class="contact_success_box" style="display:none;">We received your message and you'll hear from us soon. Thank You!</p>
-                            <!--end success message -->
                             
-                            <!--begin contact form -->
-                            <form id="contact-form" class="row contact-form contact" action="php/contact.php" method="post">
+                            <form id="contact-form" class="row contact-form contact">
                                     
-                                <!--begin col-md-6-->
                                 <div class="col-md-6">
 
-                                    <input class="contact-input" required="" name="contact_names" placeholder="Your Name*" type="text">
+                                    <input class="contact-input" required="" name="contact_names" placeholder="Your Name" type="text">
                                 
-                                    <input class="contact-input" required="" name="contact_phone" placeholder="Phone Number*" type="text">
+                                    <input class="contact-input" required="" name="contact_phone" placeholder="Phone Number" type="number">
                                 
                                 </div>
-                                <!--end col-md-6-->
         
-                                <!--begin col-md-6-->
                                 <div class="col-md-6">
 
-                                    <input class="contact-input" required="" name="contact_email" placeholder="Email Adress*" type="email">
-                                
-                                    <select class="contact-input" required="" name="contact_ticket">
+                                    <input class="contact-input" required="" name="LastName" placeholder="Last Name" type="text">
 
-                                        <option value="">Choose Option</option>
-
-                                        <option value="Individual">Individual</option>
-
-                                        <option value="Corporate">Corporate</option>
-
-                                    </select>
-                                
+                                    <input class="contact-input" required="" name="email" placeholder="Email" type="email">
                                 </div>
-                                <!--end col-md-6-->
         
-                                <!--begin col-md-12-->
                                 <div class="col-md-12">
 
                                     <textarea class="contact-input" rows="2" cols="20" name="contact_message" placeholder="Your Message..."></textarea>
@@ -1314,28 +1818,113 @@
                                     <input value="Get In Touch" class="contact-submit" type="submit">
                                 
                                 </div>
-                                <!--end col-md-12-->
                 
                             </form>
-                            <!--end contact form -->
 
                         </div>
-                        <!--end form-->
 
                     </div>
-                    <!--end contact-form-wrapper-->
 
                 </div>
-                <!--end col-md-8-->
             
             </div>
-            <!--end row-->
     
         </div>
-        <!--end container-->
     
-    </section>
-    <!--end section-bg-2 -->
+    </section> -->
+
+
+
+    <!--  start contact us -->
+   <section class="sp-contact-wrapper" id="contact">
+
+  <div class="sp-contact-inner">
+    <!-- Contact Form -->
+    <div class="sp-contact-form-box">
+      <h1 class="sp-contact-heading">Contact Us</h1>
+
+      <form id="spContactForm" autocomplete="on" class="sp-contact-form">
+        <div class="sp-contact-row">
+          <div class="sp-contact-field">
+            <label for="name">Full name</label>
+            <input id="name" name="name" type="text" required placeholder="Your name" />
+          </div>
+          <div class="sp-contact-field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required placeholder="you@company.com" />
+          </div>
+        </div>
+
+        <div class="sp-contact-field">
+          <label for="phone">Phone number</label>
+          <input id="phone" name="phone" type="tel" required placeholder="Your phone number" />
+        </div>
+
+        <div class="sp-contact-field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Tell us what's on your mind..." required></textarea>
+        </div>
+
+        <button type="submit" class="sp-contact-btn">Submit</button>
+      </form>
+    </div>
+
+    <!-- Map Section -->
+    <div class="sp-contact-map-card">
+      
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d112268.50786633746!2d76.91281651640624!3d28.4376314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1941a1b443c3%3A0x469938e882855b26!2sShapoorji%20Pallonji%20The%20Dualis!5e0!3m2!1sen!2sin!4v1762600560091!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            
+        </iframe>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div id="spContactToast" class="sp-contact-toast">Message sent ✓</div>
+
+</section>
+    <!--  end contact us -->
+
+
+
+
+    <!-- enquiry form  -->
+     <section class="sp-enquiry-section">
+
+  <!-- Hidden Checkbox for Toggle -->
+  <input type="checkbox" id="sp-enquiry-toggle" class="sp-enquiry-toggle">
+
+  <!-- Floating Button -->
+  <label for="sp-enquiry-toggle" class="sp-enquiry-btn">Enquiry Form</label>
+
+  <!-- Popup Form -->
+  <div class="sp-enquiry-popup">
+    <div class="sp-enquiry-box">
+      <h2>Enquiry Form</h2>
+      <form class="sp-enquiry-form">
+        <div class="sp-field">
+          <label for="sp-name">Full Name</label>
+          <input type="text" id="sp-name" placeholder="Enter your name" required>
+        </div>
+        <div class="sp-field">
+          <label for="sp-email">Email</label>
+          <input type="email" id="sp-email" placeholder="Enter your email" required>
+        </div>
+        <div class="sp-field">
+          <label for="sp-phone">Phone</label>
+          <input type="tel" id="sp-phone" placeholder="Enter your phone number" required>
+        </div>
+        <button type="submit" class="sp-submit-btn">Submit</button>
+      </form>
+
+      <!-- Close Button -->
+      <label for="sp-enquiry-toggle" class="sp-close-btn">×</label>
+    </div>
+  </div>
+
+</section>
+
+
+
 
     <!--begin footer -->
     <div class="footer">
@@ -1349,7 +1938,7 @@
                 <!--begin col-md-5 -->
                 <div class="col-md-5">
                    
-                    <p>© 2020 <span class="template-name">LaunchPage</span>. Designed by <a href="https://themeforest.net/user/epic-themes/portfolio?ref=Epic-Themes" target="_blank">Epic-Themes</a></p>
+                    <h2>Shapoorji Pallonji</h2>
                     
                 </div>
                 <!--end col-md-5 -->
@@ -1368,15 +1957,11 @@
 
                         <li><a href="#"><i class="fab fa-twitter"></i></a></li>
 
-                        <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
-
                         <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
 
                         <li><a href="#"><i class="fab fa-instagram"></i></a></li>
 
-                        <li><a href="#"><i class="fab fa-skype"></i></a></li>
 
-                        <li><a href="#"><i class="fab fa-dribble"></i></a></li>
 
                     </ul>
                     <!--end footer_social -->
@@ -1393,6 +1978,13 @@
     </div>
     <!--end footer -->
 
+
+
+
+    <!-- WhatsApp Floating Icon -->
+<a href="https://wa.me/919999999999" class="sp-whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Icon">
+</a>
 
 <!-- Load JS here for greater good =============================-->
 <script src="js/jquery-3.3.1.min.js"></script>
