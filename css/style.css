@@ -771,9 +771,9 @@ ul.footer_social li a i:hover {
 .home-section {
 	position: relative;
 	z-index: 999;
-  	padding-top: 140px;
+  	padding-top: 230px;
   	padding-bottom: 110px;
-  	background: url(../images/bg10.jpg) top center no-repeat;
+  	background: url(https://res.cloudinary.com/dcqa35nax/image/upload/v1762507440/shapoorji-ponji-wala_1_izpsow.png) top center no-repeat;
 	background-size: cover;
 }
 
@@ -2095,4 +2095,344 @@ ul.benefits.white li i {
 	    margin-left: 0;
 	}
 
+}
+
+
+.home-section{
+	height: 100vh;
+}
+
+
+.logo{
+	width: 70px;
+	height: 55px;
+	transform: scale(1.7);
+}
+
+
+
+
+
+/* contact css  */
+
+/* Wrapper */
+.sp-contact-wrapper {
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Inner Layout */
+.sp-contact-inner {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  width: 100%;
+  max-width: 1100px;
+}
+
+/* Left Side: Form */
+.sp-contact-form-box {
+  flex: 1;
+  background: #fff;
+  border-radius: 12px;
+  padding: 30px 25px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+}
+
+.sp-contact-heading {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #002b5b;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.sp-contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.sp-contact-row {
+  display: flex;
+  gap: 16px;
+  width: 100%;
+}
+
+.sp-contact-field {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.sp-contact-field label {
+  font-weight: 500;
+  margin-bottom: 5px;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.sp-contact-field input,
+.sp-contact-field textarea {
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.sp-contact-field input:focus,
+.sp-contact-field textarea:focus {
+  border-color: #002b5b;
+}
+
+.sp-contact-field textarea {
+  resize: vertical;
+  min-height: 90px;
+}
+
+/* Button */
+.sp-contact-btn {
+  background: #e52f37;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 18px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  width: fit-content;
+}
+
+.sp-contact-btn:hover {
+  background: #e52f37;
+}
+
+/* Right Side: Map */
+.sp-contact-map-card {
+  flex: 1;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+  background: #fff;
+}
+
+#spContactMap {
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+}
+
+/* Toast */
+.sp-contact-toast {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #002b5b;
+  color: #fff;
+  padding: 10px 16px;
+  border-radius: 6px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.4s ease;
+  z-index: 9999;
+  font-size: 0.9rem;
+}
+
+.sp-contact-toast.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .sp-contact-inner {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .sp-contact-map-card {
+    min-height: 300px;
+  }
+
+  .sp-contact-form-box {
+    padding: 25px 20px;
+  }
+
+  .sp-contact-heading {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .sp-contact-row {
+    flex-direction: column;
+    gap: 12px;
+  }
+}
+
+
+
+
+
+/* enquiry form  */
+.sp-enquiry-btn {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  background: #e52f37;
+  color: #fff;
+  padding: 12px 10px;
+  border-radius: 8px 0 0 8px;
+  font-weight: 600;
+  cursor: pointer;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  text-align: center;
+  letter-spacing: 1px;
+  transition: background 0.3s ease;
+  z-index: 999;
+}
+
+.sp-enquiry-btn:hover {
+  background: #e52f38;
+}
+
+/* Hide checkbox */
+.sp-enquiry-toggle {
+  display: none;
+}
+
+/* Popup Container */
+.sp-enquiry-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+/* Show when checkbox checked */
+.sp-enquiry-toggle:checked ~ .sp-enquiry-popup {
+  display: flex;
+}
+
+/* Form Box */
+.sp-enquiry-box {
+  position: relative;
+  background: #fff;
+  padding: 30px 25px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  max-width: 400px;
+  animation: popupIn 0.3s ease;
+}
+
+@keyframes popupIn {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Form Styling */
+.sp-enquiry-box h2 {
+  text-align: center;
+  color: #002b5b;
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+}
+
+.sp-enquiry-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.sp-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.sp-field label {
+  font-weight: 500;
+  margin-bottom: 5px;
+  font-size: 0.9rem;
+}
+
+.sp-field input {
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  font-size: 0.9rem;
+  transition: border 0.3s ease;
+}
+
+.sp-field input:focus {
+  border-color: #002b5b;
+}
+
+/* Submit Button */
+.sp-submit-btn {
+  background: #002b5b;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 10px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.sp-submit-btn:hover {
+  background: #004080;
+}
+
+/* Close Button */
+.sp-close-btn {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  font-size: 1.8rem;
+  color: #333;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.sp-close-btn:hover {
+  color: #002b5b;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .sp-enquiry-btn {
+    padding: 10px 10px;
+    font-size: 0.85rem;
+  }
+
+  .sp-enquiry-box {
+    padding: 25px 20px;
+  }
+
+  .sp-enquiry-box h2 {
+    font-size: 1.3rem;
+  }
 }
